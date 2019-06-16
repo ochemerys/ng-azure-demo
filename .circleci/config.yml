@@ -43,7 +43,7 @@ jobs:
             docker build -t ochemerys.azurecr.io/ng-azure-demo:1.0 .
       - run:
           command: |
-            docker login --isername $DOCKER_USER --password $DOCKER_PASSWORD ochemerys.azurecr.io   
+            docker login --username $DOCKER_USER --password $DOCKER_PASSWORD ochemerys.azurecr.io   
       - run:
           command: |
             docker push ochemerys.azurecr.io/ng-azure-demo:1.0
